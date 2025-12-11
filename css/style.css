@@ -1,0 +1,36 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #9cd8f3;
+    font-size: 125%;
+}
+main a {
+  text-decoration: none;
+  font-style: italic;
+}
+footer a {
+    text-decoration: none;
+    font-style: italic;
+}
+p, a, h1, h2, h3, h4, h5, h6 {
+    text-align: justify;
+    color: #532a67;
+}
+nav a {
+  text-decoration: none;
+}
+
+a:hover{
+    color: #bf90d6;
+    text-decoration: underline;
+}
+header {
+    text-align: justify;
+    color: #532a67;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: right;
+    gap: 10px;
+    list-style: none;
+}
