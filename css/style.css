@@ -3,34 +3,82 @@ body {
     background-color: #9cd8f3;
     font-size: 125%;
 }
+
 main a {
   text-decoration: none;
   font-style: italic;
+  font-weight: bold;
 }
+
 footer a {
     text-decoration: none;
     font-style: italic;
+    font-weight: bold;
 }
+
 p, a, h1, h2, h3, h4, h5, h6 {
     text-align: justify;
     color: #532a67;
 }
-nav a {
-  text-decoration: none;
+
+nav {
+  display: inline-block;
+  width: 80%;
+  text-align: right;
+  margin-bottom: 20px;
 }
 
-a:hover{
+
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #532a67;
+  font-size: 1.1em;
+  margin-left: 20px; /* spacing between links */
+}
+
+
+a:hover {
     color: #bf90d6;
     text-decoration: underline;
 }
+
 header {
     text-align: justify;
     color: #532a67;
 }
+
 nav ul {
+  list-style: none;           /* ✅ removes the dots */
+  display: flex;              /* ✅ makes it horizontal */
+  justify-content: flex-end;  /* ✅ aligns links to the right */
+  gap: 20px;                  /* ✅ spacing between links */
+  padding: 0;
+  margin: 0;
+}
+
+
+nav img {
+  width: 10%;
+  vertical-align: middle;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+    align-items: start;
+    row-gap: 20px;
+    column-gap: 5%;
+}
+
+.grid img {
+    width: 100%;
+}
+
+.flex {
     display: flex;
-    flex-direction: row;
-    align-items: right;
-    gap: 10px;
-    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 15px;
 }
